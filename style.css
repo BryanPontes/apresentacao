@@ -1,0 +1,106 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o parágrafo de apresentação */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Imagem de perfil */
+p img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+/* Lista de redes sociais */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li {
+    margin: 10px 20px;
+}
+
+ul li img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #005bb5;
+}
+
+/* Link desativado (Twitter/X) */
+ul li:nth-child(5) a {
+    color: red;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+ul li:nth-child(5) a:hover {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    p img {
+        width: 120px;
+        height: 120px;
+    }
+}
